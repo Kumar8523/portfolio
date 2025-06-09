@@ -1,0 +1,44 @@
+[
+    {
+        "title": "ই-কমার্স ওয়েবসাইট",
+        "description": "একটি সম্পূর্ণ কার্যকরী ই-কমার্স প্ল্যাটফর্ম যেখানে ব্যবহারকারীরা পণ্য ব্রাউজ, কার্টে যোগ এবং নিরাপদে পেমেন্ট করতে পারে।",
+        "image": "ecommerce.jpg",
+        "tags": ["React", "Node.js", "MongoDB", "Stripe"],
+        "link": "https://example.com/ecommerce"
+    },
+    {
+        "title": "মোবাইল ব্যাংকিং অ্যাপ",
+        "description": "একটি ইউজার-ফ্রেন্ডলি মোবাইল ব্যাংকিং অ্যাপ্লিকেশন যেখানে ব্যবহারকারীরা তাদের অ্যাকাউন্ট ম্যানেজ করতে পারে।",
+        "image": "banking-app.jpg",
+        "tags": ["Flutter", "Firebase", "REST API"],
+        "link": "https://example.com/banking-app"
+    },
+    {
+        "title": "কর্পোরেট ওয়েবসাইট",
+        "description": "একটি আধুনিক কর্পোরেট ওয়েবসাইট যা কোম্পানির ব্র্যান্ডিং এবং সার্ভিসেস প্রদর্শন করে।",
+        "image": "corporate.jpg",
+        "tags": ["HTML/CSS", "JavaScript", "GSAP"],
+        "link": "https://example.com/corporate"
+    },
+    {
+        "title": "ফুড ডেলিভারি অ্যাপ",
+        "description": "একটি ফুড ডেলিভারি মোবাইল অ্যাপ্লিকেশন যেখানে ব্যবহারকারীরা তাদের প্রিয় রেস্তোরাঁ থেকে খাবার অর্ডার করতে পারে।",
+        "image": "food-delivery.jpg",
+        "tags": ["React Native", "Firebase", "Google Maps"],
+        "link": "https://example.com/food-delivery"
+    },
+    {
+        "title": "পোর্টফোলিও ওয়েবসাইট",
+        "description": "একটি ক্রিয়েটিভ পোর্টফোলিও ওয়েবসাইট যা একজন ডিজাইনার/ডেভেলপারের কাজ প্রদর্শন করে।",
+        "image": "portfolio.jpg",
+        "tags": ["HTML/CSS", "JavaScript", "Three.js"],
+        "link": "https://example.com/portfolio"
+    },
+    {
+        "title": "লার্নিং প্ল্যাটফর্ম",
+        "description": "একটি অনলাইন লার্নিং প্ল্যাটফর্ম যেখানে শিক্ষার্থীরা বিভিন্ন কোর্সে এনরোল করতে পারে এবং শিখতে পারে।",
+        "image": "learning-platform.jpg",
+        "tags": ["Laravel", "Vue.js", "MySQL"],
+        "link": "https://example.com/learning-platform"
+    }
+]
