@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার পোর্টফোলিও</title>
+    <meta name="description" content="আমার সৃজনশীল কাজের সংগ্রহ">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E293B',
+                        accent: '#10B981',
+                    },
+                    fontFamily: {
+                        'bangla': ['Hind Siliguri', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-bangla">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">আমার পোর্টফোলিও</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-primary">হোম</a>
+                    <a href="#about" class="hover:text-primary">আমার সম্পর্কে</a>
+                    <a href="#projects" class="hover:text-primary">প্রকল্পসমূহ</a>
+                    <a href="#contact" class="hover:text-primary">যোগাযোগ</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">আমি <span class="text-primary">জাহিদ হাসান</span></h1>
+                <p class="text-xl mb-6">ওয়েব ডেভেলপার ও UI/UX ডিজাইনার</p>
+                <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">যোগাযোগ করুন</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="./assets/images/hero-image.png" alt="প্রোফাইল" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">আমার <span class="text-primary">সম্পর্কে</span></h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <img src="./assets/images/profile.jpg" alt="প্রোফাইল ছবি" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="mb-6">আমি একজন প্যাশনেট ওয়েব ডেভেলপার এবং ডিজাইনার। আমার ৩ বছরের বেশি অভিজ্ঞতা রয়েছে এই ফিল্ডে। আমি সহজ, সুন্দর এবং কার্যকরী ওয়েবসাইট ডিজাইন করতে পছন্দ করি।</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="font-bold">নাম:</h3>
+                            <p>জাহিদ হাসান</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">ইমেইল:</h3>
+                            <p>jahid@example.com</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">ফোন:</h3>
+                            <p>+880 1XXX XXX XXX</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">ঠিকানা:</h3>
+                            <p>ঢাকা, বাংলাদেশ</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block mt-6 bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">রিজিউমি ডাউনলোড</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">আমার <span class="text-primary">প্রকল্প</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+                <!-- Projects will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">আমার সাথে <span class="text-primary">যোগাযোগ</span></h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">সরাসরি বার্তা পাঠান</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">আপনার নাম</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">ইমেইল ঠিকানা</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">বার্তা</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">বার্তা পাঠান</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-xl font-bold mb-4">যোগাযোগের তথ্য</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-4"></i>
+                            <p>১২৩/বি, মিরপুর রোড, ঢাকা-১২১৬, বাংলাদেশ</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mt-1 mr-4"></i>
+                            <p>+880 1XXX XXX XXX</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-primary mt-1 mr-4"></i>
+                            <p>jahid@example.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">সামাজিক যোগাযোগ</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; ২০২৩ আমার পোর্টফোলিও। সকল স্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/form-handler.js"></script>
+</body>
+</html>
