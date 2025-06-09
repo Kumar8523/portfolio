@@ -1,0 +1,112 @@
+/* Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Preloader Animation */
+#preloader {
+    transition: opacity 0.5s ease-out;
+}
+
+/* Hero Section Shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #FF4D4D, #10B981);
+    top: 20%;
+    left: 10%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #1E293B, #10B981);
+    bottom: 10%;
+    right: 10%;
+    animation: float 10s ease-in-out infinite;
+}
+
+.shape-3 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #FF4D4D, #1E293B);
+    top: 50%;
+    right: 20%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Project Card Hover Effect */
+.project-card {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(30, 41, 59, 0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Cursor Effects */
+#cursor {
+    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#cursor-follower {
+    transition: transform 0.4s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+    pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .shape-1, .shape-2, .shape-3 {
+        display: none;
+    }
+}
